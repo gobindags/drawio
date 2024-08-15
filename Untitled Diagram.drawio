@@ -1,82 +1,254 @@
 <mxfile host="app.diagrams.net">
-  <diagram name="Basic Network Setup" id="basic-network-setup">
+  <diagram name="Large Organization Network Setup" id="large-network-setup">
     <mxGraphModel dx="1257" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <!-- Router -->
-        <mxCell id="2" value="Router" style="shape=cylinder3;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="40" width="100" height="60" as="geometry" />
+
+        <!-- Internet -->
+        <mxCell id="internet" value="Internet" style="shape=ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="20" width="100" height="60" as="geometry" />
         </mxCell>
-        <!-- L3 Switch -->
-        <mxCell id="3" value="L3 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="160" width="100" height="40" as="geometry" />
+
+        <!-- Main Router -->
+        <mxCell id="main-router" value="Main Router" style="shape=cylinder3;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="100" width="100" height="60" as="geometry" />
         </mxCell>
-        <!-- L2 Switch 1 -->
-        <mxCell id="4" value="L2 Switch 1" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="280" width="100" height="40" as="geometry" />
+
+        <!-- Firewall -->
+        <mxCell id="firewall" value="Firewall" style="shape=triangle;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="180" width="100" height="60" as="geometry" />
         </mxCell>
-        <!-- L2 Switch 2 -->
-        <mxCell id="5" value="L2 Switch 2" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="280" width="100" height="40" as="geometry" />
+
+        <!-- Core Router -->
+        <mxCell id="core-router" value="Core Router" style="shape=cylinder3;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="260" width="100" height="60" as="geometry" />
         </mxCell>
-        <!-- L2 Switch 3 -->
-        <mxCell id="6" value="L2 Switch 3" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="280" width="100" height="40" as="geometry" />
+
+        <!-- Branch 1 -->
+        <mxCell id="branch1-l3-switch" value="Branch 1 L3 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="360" width="100" height="40" as="geometry" />
         </mxCell>
-        <!-- Computer 1 -->
-        <mxCell id="7" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="200" y="380" width="80" height="40" as="geometry" />
+
+        <!-- Branch 1 Building 1 -->
+        <mxCell id="branch1-building1" value="Branch 1 Building 1 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="460" width="100" height="40" as="geometry" />
         </mxCell>
-        <!-- Computer 2 -->
-        <mxCell id="8" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="320" y="380" width="80" height="40" as="geometry" />
+        <mxCell id="branch1-building1-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="560" width="80" height="40" as="geometry" />
         </mxCell>
-        <!-- Computer 3 -->
-        <mxCell id="9" value="Computer 3" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="380" width="80" height="40" as="geometry" />
+        <mxCell id="branch1-building1-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="560" width="80" height="40" as="geometry" />
         </mxCell>
-        <!-- Computer 4 -->
-        <mxCell id="10" value="Computer 4" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="380" width="80" height="40" as="geometry" />
+
+        <!-- Branch 1 Building 2 -->
+        <mxCell id="branch1-building2" value="Branch 1 Building 2 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="460" width="100" height="40" as="geometry" />
         </mxCell>
-        <!-- Computer 5 -->
-        <mxCell id="11" value="Computer 5" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="600" y="380" width="80" height="40" as="geometry" />
+        <mxCell id="branch1-building2-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="560" width="80" height="40" as="geometry" />
         </mxCell>
-        <!-- Computer 6 -->
-        <mxCell id="12" value="Computer 6" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="380" width="80" height="40" as="geometry" />
+        <mxCell id="branch1-building2-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="560" width="80" height="40" as="geometry" />
         </mxCell>
+
+        <!-- Branch 1 Building 3 -->
+        <mxCell id="branch1-building3" value="Branch 1 Building 3 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch1-building3-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch1-building3-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 2 -->
+        <mxCell id="branch2-l3-switch" value="Branch 2 L3 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 2 Building 1 -->
+        <mxCell id="branch2-building1" value="Branch 2 Building 1 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch2-building1-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch2-building1-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 2 Building 2 -->
+        <mxCell id="branch2-building2" value="Branch 2 Building 2 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch2-building2-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch2-building2-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 2 Building 3 -->
+        <mxCell id="branch2-building3" value="Branch 2 Building 3 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch2-building3-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch2-building3-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 3 -->
+        <mxCell id="branch3-l3-switch" value="Branch 3 L3 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 3 Building 1 -->
+        <mxCell id="branch3-building1" value="Branch 3 Building 1 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch3-building1-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch3-building1-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 3 Building 2 -->
+        <mxCell id="branch3-building2" value="Branch 3 Building 2 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch3-building2-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch3-building2-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 3 Building 3 -->
+        <mxCell id="branch3-building3" value="Branch 3 Building 3 L2 Switch" style="shape=rect;rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="980" y="460" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch3-building3-computer1" value="Computer 1" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="branch3-building3-computer2" value="Computer 2" style="shape=rect;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="560" width="80" height="40" as="geometry" />
+        </mxCell>
+
         <!-- Connections -->
-        <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="3">
+        <mxCell id="conn-internet-router" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="internet" target="main-router">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="4">
+        <mxCell id="conn-router-firewall" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="main-router" target="firewall">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="5">
+        <mxCell id="conn-firewall-core-router" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="firewall" target="core-router">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="3" target="6">
+
+        <!-- Branch 1 -->
+        <mxCell id="conn-core-router-branch1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="core-router" target="branch1-l3-switch">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="7">
+        <mxCell id="conn-branch1-switch-building1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-l3-switch" target="branch1-building1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="8">
+        <mxCell id="conn-branch1-building1-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-building1" target="branch1-building1-computer1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="9">
+        <mxCell id="conn-branch1-building1-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-building1" target="branch1-building1-computer2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="10">
+
+        <mxCell id="conn-branch1-switch-building2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-l3-switch" target="branch1-building2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="11">
+        <mxCell id="conn-branch1-building2-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-building2" target="branch1-building2-computer1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="12">
+        <mxCell id="conn-branch1-building2-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-building2" target="branch1-building2-computer2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn-branch1-switch-building3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-l3-switch" target="branch1-building3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch1-building3-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-building3" target="branch1-building3-computer1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch1-building3-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch1-building3" target="branch1-building3-computer2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 2 -->
+        <mxCell id="conn-core-router-branch2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="core-router" target="branch2-l3-switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch2-switch-building1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-l3-switch" target="branch2-building1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch2-building1-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-building1" target="branch2-building1-computer1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch2-building1-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-building1" target="branch2-building1-computer2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn-branch2-switch-building2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-l3-switch" target="branch2-building2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch2-building2-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-building2" target="branch2-building2-computer1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch2-building2-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-building2" target="branch2-building2-computer2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn-branch2-switch-building3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-l3-switch" target="branch2-building3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch2-building3-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-building3" target="branch2-building3-computer1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch2-building3-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch2-building3" target="branch2-building3-computer2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Branch 3 -->
+        <mxCell id="conn-core-router-branch3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="core-router" target="branch3-l3-switch">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch3-switch-building1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-l3-switch" target="branch3-building1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch3-building1-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-building1" target="branch3-building1-computer1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch3-building1-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-building1" target="branch3-building1-computer2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn-branch3-switch-building2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-l3-switch" target="branch3-building2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch3-building2-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-building2" target="branch3-building2-computer1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch3-building2-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-building2" target="branch3-building2-computer2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="conn-branch3-switch-building3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-l3-switch" target="branch3-building3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch3-building3-computer1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-building3" target="branch3-building3-computer1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn-branch3-building3-computer2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="branch3-building3" target="branch3-building3-computer2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
